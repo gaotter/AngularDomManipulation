@@ -23,11 +23,11 @@ export class DynamicTableComponent implements OnInit, AfterViewInit, AfterConten
 
 
   ngAfterViewInit(): void {
-    console.log('th', this.vc);
+   // console.log('th', this.vc);
   }
 
   ngAfterContentInit(): void {
-    console.log("content", this.content);
+    // console.log("content", this.content);
     this.content.forEach(c => console.log(c));
   }
 

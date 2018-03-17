@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { DynamicTableComponent } from './tables/dynamic-table/dynamic-table.component';
 import { DynamicTableUngComponent } from './tables/dynamic-table-ung/dynamic-table-ung.component';
+import { DynamicTableUngDirective } from './tables/dynamic-table-ung/dynamic-table-ung.directive';
 import { TableModule } from 'primeng/table';
 
 
@@ -12,8 +13,8 @@ import { TableModule } from 'primeng/table';
   declarations: [
     AppComponent,
     DynamicTableComponent,
-    DynamicTableUngComponent
-
+    DynamicTableUngComponent,
+    DynamicTableUngDirective
   ],
   imports: [
     BrowserModule,
