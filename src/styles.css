@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+<<<<<<< HEAD
 .hide {
     display: none;
 }
+=======
+body {
+  background-color: white;
+}
+>>>>>>> 4eb6d582cd7bc2d0d8e5143ebe100e34ea7ba72d
