@@ -1,4 +1,4 @@
-import { Directive, ElementRef, AfterViewInit } from '@angular/core';
+import { Directive, ElementRef, AfterViewInit, HostListener } from '@angular/core';
 
 @Directive({
     selector: '[dynamicResponsiveTable]'
@@ -22,6 +22,10 @@ export class DynamicResponsiveTableDirective implements AfterViewInit {
         this.handleResponsivenes();
     }
 
+    @HostListener('window:resize')
+    onResize() {
+        this.handleResponsivenes();
+    }
 
     private retriveTableElement() {
         this.tableElement = this.elementRef.nativeElement.getElementsByTagName('Table')[0];
